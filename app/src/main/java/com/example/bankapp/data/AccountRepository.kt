@@ -6,12 +6,16 @@ class AccountRepository {
 
     fun getAccount(): BankAccount {
         return BankAccount(
-            7000.00,
-            2300.0,
-            20000.0,
-            569.34,
+            5600.0,
+            5600.0,
+            "ORO BBVA",
+            "*4323",
+            546.65,
             4700.0,
-            5500.0
+            "28 feb 2021",
+            5000.0,
+            "Cuenta de ahorro",
+            "*3294"
         )
     }
 

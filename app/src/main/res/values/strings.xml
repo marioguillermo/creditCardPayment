@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BankApp</string>
+    <!--  El valor del label_peso_sign permite que se le pase un número decimal como parámetro    -->
+    <!--  El %.2f inidica donde ira el valor  -->
+    <!--  Ejemplo: $44.56  -->
+    <string name="label_peso_sign">$%.2f</string>
+    <string name="label_card">Tarjeta a pagar</string>
+    <string name="label_current_debt">Deuda actual</string>
+    <string name="label_closing_date_balace">Saldo al corte</string>
+    <string name="label_payment_due_date">Fecha limite de pago</string>
+    <string name="label_withdraw_account">Cuenta de retiro</string>
+    <string name="label_current_balance">Saldo disponible</string>
+
 </resources>

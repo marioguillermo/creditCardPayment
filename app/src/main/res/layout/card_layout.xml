@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_primary_variant"
+    android:paddingBottom="14dp">
+
+    <TextView
+        android:id="@+id/tvCardToPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/label_card"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCard"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_credit_card_24"
+        app:layout_constraintStart_toStartOf="@id/tvCardToPay"
+        app:layout_constraintTop_toBottomOf="@id/tvCardToPay" />
+
+    <TextView
+        android:id="@+id/tvCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tvCardNumber"
+        app:layout_constraintStart_toEndOf="@id/ivCard"
+        app:layout_constraintTop_toTopOf="@id/ivCard"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="ORO BBVA" />
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/ivCard"
+        app:layout_constraintStart_toStartOf="@id/tvCardName"
+        app:layout_constraintTop_toBottomOf="@id/tvCardName"
+        tools:text="*3922" />
+
+    <TextView
+        android:id="@+id/tvCurrentDebtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivCard"
+        tools:text="$5330.32" />
+
+    <TextView
+        android:id="@+id/tvCurrentDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/label_current_debt"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCurrentDebtAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrentDebtAmount" />
+
+    <TextView
+        android:id="@+id/tvClosingDateBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/label_closing_date_balace"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/ivCard"
+        app:layout_constraintTop_toBottomOf="@id/ivCard" />
+
+    <TextView
+        android:id="@+id/tvClosingDateBalanceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCurrentDebtAmount"
+        app:layout_constraintTop_toBottomOf="@id/ivCard"
+        tools:text="$18,923.33" />
+
+    <TextView
+        android:id="@+id/tvPaymentDateH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/label_payment_due_date"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/ivCard"
+        app:layout_constraintTop_toBottomOf="@id/tvClosingDateBalance" />
+
+    <TextView
+        android:id="@+id/tvPaymentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCurrentDebtAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvClosingDateBalance"
+        tools:text="29 feb 2021" />
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/label_withdraw_account"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentDate" />
+
+    <TextView
+        android:id="@+id/tvAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/tvAccount"
+        app:layout_constraintTop_toBottomOf="@id/tvAccount"
+        tools:text="Cuenta de ahorro" />
+
+    <TextView
+        android:id="@+id/tvAccountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/tvAccountName"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountName"
+        tools:text="*3434" />
+
+    <TextView
+        android:id="@+id/tvAccountBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCurrentDebt"
+        app:layout_constraintTop_toTopOf="@id/tvAccountName"
+        tools:text="$2,591.90" />
+
+    <TextView
+        android:id="@+id/tvCurrentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/label_current_balance"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/tvAccountBalance"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountBalance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

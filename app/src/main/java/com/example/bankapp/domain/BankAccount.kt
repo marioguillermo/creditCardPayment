@@ -1,10 +1,14 @@
 package com.example.bankapp.domain
 
 data class BankAccount(
-    val debt: Double,
-    val deferred: Double,
-    val creditLine: Double,
-    val minPayment: Double,
-    val paymentAmount: Double,
-    val currentBalance: Double
+    val closingDateBalance: Double,
+    val currentDebt: Double,
+    val cardName: String,
+    val cardNumber: String,
+    val minimumPaymentDue: Double,
+    val paymentDue: Double,
+    val paymentDueDate: String,
+    val accountBalance: Double,
+    val accountName: String,
+    val accountNumber: String
 )
